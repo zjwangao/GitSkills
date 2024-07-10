@@ -11,7 +11,7 @@ jobs:
      with:
       terraform_version: 1.9.1
    - name: Terraform Init
-     run: terraform init terraform
+     run: terraform init
    - name: Terraform Plan
      run: terraform plan -out=tfplan terraform
    - name: Terraform Apply
