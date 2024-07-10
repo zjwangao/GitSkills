@@ -1,5 +1,4 @@
 name: Ubuntu
-on: push
 jobs:
   Ubuntu:
     runs-on: ubuntu-latest
