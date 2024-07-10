@@ -1,0 +1,15 @@
+name: Ubuntu
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Setup SSH connection
+      uses: P3TERX/debugger-action@master
+      with:
+        timeout-minutes: 30 # 设置SSH会话超时时间（分钟）
