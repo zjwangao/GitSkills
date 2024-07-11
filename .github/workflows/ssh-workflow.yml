@@ -1,8 +1,0 @@
-name: Ubuntu
-on: push
-jobs:
-  Ubuntu:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Setup SSH connection
-      uses: P3TERX/debugger-action@master
